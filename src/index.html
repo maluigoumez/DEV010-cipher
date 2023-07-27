@@ -1,14 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cipher</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
+
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
+    <header>
+      <h1>Telegrama</h1>
+    </header>
+    <p>
+    <section id="inicio">
+        Cifra mensajes secretos con nuestra aplicación de cifrado 🗝️ <br />
+        Cifra, descifra y diviértete escribiendo mensajes ocultos 🔒
+      </p>
+
+      <button id="empezarCifrarB">Empezar</button>
+    </section>
+
+    <!--Espacio para dividir las secciones de mi aplicación-->
+
+    <section id="empezarCifrar">
+      <h4>Escribe el texto que te gustaría cifrar:</h4>
+      <textarea id="cajaTexto" name="cajaTexto"></textarea>
+      <br />
+      <label for="lugaresOffset">Número de lugares en offset:</label>
+      <input type="number" id="lugaresOffset" name="lugaresOffset" />
+      <br />
+      <br />
+      <button id="cifrarB">
+        Cifrar
+      </button>
+    </section>
+
+    <!--Espacio para dividir las secciones de mi aplicación-->
+
+    <section id="textoCifrado">
+      <p>*aquí debería estar el texto ya cifrado*</p>
+      <br />
+
+      <button id="inicioB">Volver al inicio</button>
+    </section>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
