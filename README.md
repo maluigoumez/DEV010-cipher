@@ -2,7 +2,7 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
+* [1. Descripción](#1-descripción)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Consideraciones generales](#3-consideraciones-generales)
 * [4. Hito: Criterios de aceptación mínimos del proyecto](#4-hito-criterios-de-aceptación-mínimos-del-proyecto)
@@ -14,19 +14,10 @@
 
 ***
 
-## 1. Preámbulo
+## 1. Descripción
 
-Cifrar significa ocultar el contenido de un mensaje a simple vista, de manera
-que sólo las partes autorizadas pueden descifrar un texto cifrado.
-El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
-es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
-César lo usaba para enviar órdenes secretas a sus generales en los campos de
-batalla.
-
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es
-un tipo de cifrado por sustitución, es decir que cada letra del texto original
-es reemplazada por otra que se encuentra un número fijo de posiciones
-(desplazamiento) más adelante en el mismo alfabeto.
+Telegrama es una aplicación que te permite enviar mensajes secretos cifrados a tus amigas. La idea detrás de la aplicación es brindar diversión y complicidad en la comunicación afectiva entre personas cercanas. Imagina ser la única que comparte el número de "offset" que descifra el código y mantener el contenido de los mensajes en secreto.
+Esta aplicación se basa en el [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher), uno de los primeros métodos de cifrado conocidos y una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
 
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
 
@@ -36,12 +27,7 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 * La palabra CASA se cifra como FDVD.
 * Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 * Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
-
-En la actualidad, todos los cifrados de sustitución simple se descifran con
-mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la
-comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas
-más complejos de codificación, como el cifrado Vigenère, e incluso tiene
-aplicación en el sistema ROT13.
+  
 
 ## 2. Resumen del proyecto
 
