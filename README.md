@@ -1,10 +1,10 @@
-# Cifrado César
+# Telegrama - Mensajes Secretos Cifrados
 
 ## Índice
 
 * [1. Descripción](#1-descripción)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Consideraciones generales](#3-consideraciones-generales)
+* [2. Usuarias objetivo](#2-usuarias-objetivo)
+* [3. Características principales](#3-características-principales)
 * [4. Hito: Criterios de aceptación mínimos del proyecto](#4-hito-criterios-de-aceptación-mínimos-del-proyecto)
 * [5. Hito Opcional: Agrega soporte para minúsculas y otros caracteres](#5-hito-opcional-agrega-soporte-para-minúsculas-y-otros-caracteres)
 * [6. Consideraciones técnicas](#6-consideraciones-técnicas)
@@ -17,6 +17,7 @@
 ## 1. Descripción
 
 Telegrama es una aplicación que te permite enviar mensajes secretos cifrados a tus amigas. La idea detrás de la aplicación es brindar diversión y complicidad en la comunicación afectiva entre personas cercanas. Imagina ser la única que comparte el número de "offset" que descifra el código y mantener el contenido de los mensajes en secreto.
+<br/>
 Esta aplicación se basa en el [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher), uno de los primeros métodos de cifrado conocidos y una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
 
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
@@ -29,46 +30,18 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 * Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
   
 
-## 2. Resumen del proyecto
+## 2. Usuarias objetivo
 
-En este proyecto crearás una aplicación web que servirá para que tu usuaria
-pueda cifrar y descifrar un texto en el navegador indicando un desplazamiento
-específico de caracteres (_offset_). Lo harás utilizando HTML, CSS y JavaScript.
+Telegrama está diseñada pensando en amigas, niñas, adolescentes y jóvenes adultas que buscan añadir un toque de misterio y complicidad a sus relaciones interpersonales. La aplicación les permite cifrar y descifrar mensajes de una manera sencilla y atractiva.
 
-La temática es libre. Piensa en qué situaciones se necesitaría cifrar un mensaje.
-Decide cómo debe ser esa experiencia de uso (qué pantallas, explicaciones, mensajes,
-colores, etc.) Algunas ideas de ejemplo:  
 
-* Crear claves seguras para el email.
-* Encriptar/cifrar una tarjeta de crédito.
-* Herramienta de mensajería interna de una organización de derechos humanos en
-  una zona de conflicto.
-* Mensajería secreta para parejas.
+## 3. Características principales
 
-Como continuación del proyecto de preadmisión, volverás a trabajar sobre
-fundamentos de JavaScript, incluyendo conceptos como variables, condicionales,
-y funciones, así como eventos y manipulación básica del DOM, fundamentos de
-HTML y CSS. Mientras desarrollas este proyecto, te familiarizarás con nuevos
-conceptos también.
-
-### Los objetivos generales de este proyecto son los siguientes
-
-* Trabajar en base a un boilerplate, la estructura básica de un proyecto en
-  distintas carpetas (a través modulos en JS).
-* Conocer las herramientas de mantenimiento y mejora del código (linters y
-  pruebas unitarias).
-* Aprender sobre objetos, estructuras, métodos e iteración (bucles)
-  en JavaScript
-* Implementar control de versiones con git (y la plataforma github)
-
-## 3. Consideraciones generales
-
-* Este proyecto lo resolvemos de manera **individual**.
-* El rango de tiempo estimado para completar el proyecto es de 1 a 3 Sprints.
-* Enfócate en aprender y no solamente en "completar" el proyecto.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear.
-  No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
-  Irás aprendiendo.
+* Cifrado de mensajes secretos con un número de "offset" proporcionado por la usuaria.
+* Descifrado de mensajes utilizando el mismo número de "offset" utilizado para el cifrado.
+* Interfaz de usuario intuitiva y fácil de usar.
+* Diseño inspirado en el concepto de telegramas, con tonos oscuros para crear un ambiente misterioso y reservado.
+  
 
 ## 4. Hito: Criterios de aceptación mínimos del proyecto
 
