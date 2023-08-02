@@ -36,6 +36,7 @@ textarea {
   border-radius: 8px;
   color: grey;
   height: 70px;
+  text-align: center;
   width: 400px;
 }
 

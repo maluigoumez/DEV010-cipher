@@ -11,8 +11,9 @@
     <header>
       <h1>Telegrama</h1>
     </header>
-    <p>
+
     <section id="inicio">
+      <p>
         Cifra mensajes secretos con nuestra aplicación de cifrado 🗝️ <br />
         Cifra, descifra y diviértete escribiendo mensajes ocultos 🔒
       </p>
@@ -30,9 +31,7 @@
       <input type="number" id="lugaresOffset" name="lugaresOffset" />
       <br />
       <br />
-      <button id="cifrarB">
-        Cifrar
-      </button>
+      <button id="cifrarB">Cifrar</button>
     </section>
 
     <!--Espacio para dividir las secciones de mi aplicación-->
@@ -42,7 +41,28 @@
       <br />
 
       <button id="inicioB">Volver al inicio</button>
+
+      <button id="empezarDescifrarB">Descifrar texto</button>
     </section>
+    <!--Espacio para dividir las secciones de mi aplicación-->
+    <section id="empezarDescifrar">
+      <h4>Escribe el texto que te gustaría descifrar:</h4>
+      <textarea id="cajaTexto2" name="cajaTexto"></textarea>
+      <br />
+      <label for="lugaresOffset">Número de lugares en offset:</label>
+      <input type="number" id="lugaresOffset2" name="lugaresOffset" />
+      <br />
+      <br />
+      <button id="descifrarB">Descifrar</button>
+    </section>
+
+    <section id="textoDescifrado">
+      <p>*aquí debería estar el texto ya descifrado*</p>
+      <br />
+
+      <button id="inicioB2">Volver al inicio</button>
+    </section>
+
     <script type="module" src="./index.js"></script>
   </body>
 </html>
