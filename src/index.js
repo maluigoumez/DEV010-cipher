@@ -1,5 +1,6 @@
-import { encode } from "./cipher.js";
-import { decode } from "./cipher.js";
+// import { encode } from "./cipher.js";
+// import { decode } from "./cipher.js";
+import cipher from "./cipher.js";
 
 document.getElementById("inicio").style.display = "block";
 document.getElementById("empezarCifrar").style.display = "none";
@@ -37,8 +38,8 @@ function cifrarF() {
   const offset = parseInt(document.getElementById("lugaresOffset").value);
 
   // Realizar el cifrado (utilizando la función cipher de cipher.js)
-  const textoCifradoC = encode(textoPorCifrar, offset);
-
+  const textoCifradoC = cipher.encode(offset, textoPorCifrar);
+  // console.log(cipher.encode(offset, textoPorCifrar));
   // Mostrar el texto cifrado
   const parrafoCifrado = document
     .getElementById("textoCifrado")
@@ -95,7 +96,7 @@ function descifrarF() {
   const offset2 = parseInt(document.getElementById("lugaresOffset2").value);
 
   // Realizar el descifrado (utilizando la función cipher de cipher.js)
-  const textoDescifradoC = decode(textoPorDescifrar, offset2);
+  const textoDescifradoC = cipher.decode(offset2, textoPorDescifrar);
 
   // Mostrar el texto cifrado
   const parrafoDescifrado = document
